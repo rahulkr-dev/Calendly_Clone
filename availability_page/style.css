@@ -8,6 +8,9 @@ box-sizing: border-box;
 font-family: 'Roboto', sans-serif;
 font-weight: 200;
 }
+h4{
+    font-size: 16px;
+}
 
 
 :root {
@@ -103,6 +106,9 @@ main {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 
+}
+.top{
+    border-bottom: var(--border);
 }
 .top>div{
     margin: 20px 0;
@@ -249,4 +255,61 @@ main {
 
 .mystyle{
     display: block;
+}
+
+
+/* ---------------- list view container data---------- */
+.main_content{
+    display: flex;
+}
+#list-data{
+    width: 65%;
+    height: 300px;
+    border-right: 2px solid var(--bg1);
+    padding: 20px 20px;
+    
+}
+.input_time{
+    display: flex;
+    justify-content: space-between;
+}
+.input_time input[type="text"]{
+    width: 5.4rem;
+    height: 2.5rem;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 5px 12px;
+}
+
+
+
+#override{
+    width: 35%;
+    height: 300px;
+    font-size: 15px;
+    padding: 25px;
+}
+#override h4{
+    color: black;
+    font-weight: bold;
+}
+#override p{
+    margin-top: 18px;
+    line-height: 20px;
+    color: gray;
+}
+#override button{
+    border: none;
+    background-color: white;
+    width: 100%;
+    padding: 7px;
+    border-radius: 18px;
+    border: 1px solid blue;
+    margin-top: 18px;
+}
+#override button:hover{
+    /* background:rgba(rgb(4, 0, 255), rgb(28, 0, 128), blue, .5) */
+    background-color: rgb(191, 237, 245);
 }

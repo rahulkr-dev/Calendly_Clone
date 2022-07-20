@@ -15,7 +15,7 @@ async function main(){
     addCountries(res)
 }
 // main();
-
+let cArr = [];
 
 let addCountries = (data)=>{
     let box = document.getElementById('addCountries');
@@ -43,9 +43,11 @@ let addCountries = (data)=>{
         })
         // div.setAttribute('class','cdiv')
         box.append(div);;
+        cArr.push(common);
 
 
     })
+    subArr();
 }
 
 
@@ -75,3 +77,17 @@ countryBtn.addEventListener('click',()=>{
 })
 
 // ------search funcalites-------------
+// let subArr = ()=>{
+//     let count =0
+//     let subArr =[];
+//     console.log(cArr.length)
+// for(let i=0;i<cArr.length;i++){
+//   let x = cArr[i];
+//   console.log(count++)
+//   for(let j=i;j<x.length;j++){
+//     let y = x.slice(i,j+1);
+//     subArr.push(y);
+//   }
+// }
+// console.log(subArr)
+// }
