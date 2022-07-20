@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* this stylesheet is for back button and heading */
+#head{
+    display: flex;
+margin: auto;
+}
+#head>button{
+    margin: 10px 180px;
+    padding: 10px 20px;
+    font-size:larger;
+    border-radius: 40px;
+    color: rgb(119, 78, 231);
+    border: 1px solid rgb(119, 78, 231);
+    background-color: white;
+}
+ #head>span{ 
+margin:20px 130px;
+font-size:x-large;
+color: #1a1a1a ;
+} 
+
+/* this stylesheet is for entire page after back button and header */
+#container{
+    background-color: #fafafa ;
+    height: 700px;
+    margin-top: 20px;
+}
+/* This stylesheet is for one-on-one section and group section */
+#create1{
+    
+    width: 75%;
+    margin: auto ;
+    height: 310px;
+    margin-top: 20px;
+}
+#one1{
+    display: flex;
+}
+/* image1 */
+#image1{
+    
+    width: 120px;
+    height: 75%;
+}
+#image1>img{
+    height: 100%;
+}
+#image1+div{
+    
+    height:60% ;
+    width: 300px;
+}
+#image1+div>p{
+    height: 20%;
+    color: #1a1a1a ;
+}
+#createone1{
+    display: flex;
+    margin-top: 20px;
+    
+}
+/* button1 */
+#createone1>button{
+ margin-top: 20px;
+margin-left: 480px;
+padding: 3px 20px;
+border-radius: 20px;
+height: 45px;
+color:white;
+border: 1px solid #0069ff;
+background-color: #0069ff;
+}
+#group1{
+    display: flex;
+}
+/* image2 */
+#image2{
+    
+    width: 120px;
+    height: 75%;
+}
+#image2>img{
+    height: 100%;
+}
+#image2+div{
+
+    height:60% ;
+    width: 320px;
+}
+#image2+div>p{
+    height: 20%;
+    color: #1a1a1a ;
+}
+#creategroup1{
+    display: flex;
+    margin-top: 70px;
+    
+}
+/* button 2*/
+#creategroup1>button{
+    margin-top: 20px;
+margin-left: 460px;
+padding: 3px 20px;
+border-radius: 20px;
+height: 45px;
+color:white;
+border: 1px solid #0069ff;
+background-color: #0069ff;
+}
+/* this stylesheet is for invite member box */
+#invite{
+    display: flex;
+    
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: #e9f0fa ;
+}
+/* button3 */
+#invite>button{
+    margin-top:30px ;
+    margin-left: 440px;
+    height: 45px;
+    border-radius: 20px;
+    padding: 15px;
+    color: #0069ff;
+    border: 1px solid #0069ff;
+}
+#invite>p{
+    margin-top: 45px;
+    margin-left: 30px;
+}
+/* this stylesheet is for collective and round robin section */
+#create2{
+    
+    width: 75%;
+    margin: auto ;
+    height: 310px;
+    margin-top: 20px;
+}
+#one2{
+    display: flex;
+}
+#image3{
+    
+    width: 120px;
+    height: 75%;
+}
+#image3>img{
+    height: 100%;
+}
+#image3+div{
+
+    height:60% ;
+    width: 580px;
+}
+#image3+div>p{
+    height: 20%;
+    color:#717171  ;
+}
+#createone2{
+    display: flex;
+    margin-top: 20px;
+    
+}
+/* button 4*/
+#createone2>button{
+    margin-top: 20px;
+margin-left: 200px;
+padding: 3px 20px;
+border-radius: 20px;
+height: 45px;
+color: #717171 ;
+border: 1px;
+}
+#group2{
+    display: flex;
+}
+#image4{
+    
+    width: 120px;
+    height: 75%;
+}
+#image4>img{
+    height: 100%;
+}
+#image4+div{
+    
+    height:60% ;
+    width: 350px;
+}
+#image4+div>p{
+    height: 20%;
+    color:#717171  ;
+}
+#creategroup2{
+    display: flex;
+    margin-top: 70px;
+    
+}
+/* button 5*/
+#creategroup2>button{
+    margin-top: 20px;
+    margin-left: 430px;
+    padding: 3px 20px;
+    border-radius: 20px;
+    height: 45px;
+    color: #717171 ;
+    border: 1px;
+}
