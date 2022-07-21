@@ -11,6 +11,10 @@ font-weight: 200;
 h4{
     font-size: 16px;
 }
+span{
+    display: inline-block;
+    margin-right: 10px;
+}
 
 
 :root {
@@ -37,6 +41,8 @@ a{
 main {
     background-color: var(--bg1);
     /* border: 1px solid black; */
+    /* background-color: purple; */
+    /* height: 200vh; */
 }
 .headingTag{
     font-weight: 300;
@@ -261,10 +267,10 @@ main {
 /* ---------------- list view container data---------- */
 .main_content{
     display: flex;
+    border:1px solid var(--bg1);
 }
 #list-data{
     width: 65%;
-    height: 300px;
     border-right: 2px solid var(--bg1);
     padding: 20px 20px;
     
@@ -272,6 +278,7 @@ main {
 .input_time{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 20px;
 }
 .input_time input[type="text"]{
@@ -282,6 +289,28 @@ main {
     border-radius: 8px;
     font-size: 20px;
     padding: 5px 12px;
+}
+.input_time span{
+margin-right: 25px;
+margin-left: 10px;
+}
+
+.week_name{
+    width: 20px;
+}
+.plusIcon{
+    font-size: 25px;
+}
+.delIcon{
+    color: black;
+}
+.input_time_first{
+    display: flex;
+    align-items: center;
+}
+.unavaiable{
+    /* display: flex; */
+    color: gray;
 }
 
 

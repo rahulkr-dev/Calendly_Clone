@@ -95,18 +95,69 @@ let inputFieldSet = () => {
         let inp = document.querySelector('.addInputTimes');
         inp.innerHTML += `      <div class="input_time">
         <div class="input_time_first">
-            <input type="checkbox" name="" id="">
-            <span>${inputArr[i]}</span>
+            <input type="checkbox" name="" class="time_checkbox" checked>
+            <span class ="week_name">${inputArr[i]}</span>
+            <div class="unavaiable">
             <input type="text" name="" id="" value="9:00">
             <span> - </span>
             <input type="text" name="" id="" value="5:00">
-            <span><i class="fa-regular fa-trash-can"></i></span>
+            <span class="setIcon delIcon"><i class="fa-regular fa-trash-can"></i></span>
+            </div>
         </div>
         <div class="input_time_second">
-            <span>+</span>
-            <span><i class="fa-regular fa-copy"></i></span>
+            <span class="plusIcon setIcon">+</span>
+            <span class="setIcon"><i class="fa-regular fa-copy"></i></span>
         </div>
     </div>`
     }
 }
 inputFieldSet();
+
+// --------- checkbox or delete icon funclaties----------
+
+// let remove = (e)=>{
+//     // let element = document.querySelector('.unavaiable');
+//     // element.innerHTML = "Unavailable"
+//     console.log('hi')
+// }
+// remove();
+
+let data1 = document.querySelectorAll('.time_checkbox');
+// ==>  add event listner to checkbox because onclick is not working,  I don't know why
+data1.forEach((ele) => {
+    ele.addEventListener('click', () => {
+        console.log(ele);
+        if (ele.checked == true) {
+            ele.parentNode.lastElementChild.innerHTML = ` <input type="text" name="" id="" value="9:00">
+            <span> - </span>
+            <input type="text" name="" id="" value="5:00">
+            <span class="setIcon"><i class="fa-regular fa-trash-can"></i></span>`
+        } else {
+            ele.parentNode.lastElementChild.innerHTML = "Unavailable";
+
+        }
+    })
+})
+
+//--------- making checkbox by default checked---------
+window.addEventListener('DOMContentLoaded',()=>{
+    // console.log('hi')
+    data1.forEach(ele=>{
+        ele.defaultChecked;
+        // console.log(ele)
+    })
+})
+
+// ---- same delete funcalites in delete icon---------
+let detArr = document.querySelectorAll('.delIcon');
+detArr.forEach(ele=>{
+    ele.addEventListener('click',()=>{
+        // console.log(ele.parentElement)
+       let x= ele.parentElement.parentElement.firstElementChild;
+       x.checked = false
+
+    //    console.log(x);
+        ele.parentElement.innerHTML = "Unavailable";
+    })
+})
+
