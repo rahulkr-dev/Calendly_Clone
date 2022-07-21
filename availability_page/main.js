@@ -43,7 +43,7 @@ let addCountries = (data) => {
 
 
     })
-    subArr();
+    // subArr();
 }
 
 
@@ -98,9 +98,9 @@ let inputFieldSet = () => {
             <input type="checkbox" name="" class="time_checkbox" checked>
             <span class ="week_name">${inputArr[i]}</span>
             <div class="unavaiable">
-            <input type="text" name="" id="" value="9:00">
+            <input type="text" name="" id="" value="9:30 am">
             <span> - </span>
-            <input type="text" name="" id="" value="5:00">
+            <input type="text" name="" id="" value="5:00 pm">
             <span class="setIcon delIcon"><i class="fa-regular fa-trash-can"></i></span>
             </div>
         </div>
@@ -128,9 +128,9 @@ data1.forEach((ele) => {
     ele.addEventListener('click', () => {
         console.log(ele);
         if (ele.checked == true) {
-            ele.parentNode.lastElementChild.innerHTML = ` <input type="text" name="" id="" value="9:00">
+            ele.parentNode.lastElementChild.innerHTML = ` <input type="text" name="" id="" value="9:30 am">
             <span> - </span>
-            <input type="text" name="" id="" value="5:00">
+            <input type="text" name="" id="" value="5:00 pm">
             <span class="setIcon"><i class="fa-regular fa-trash-can"></i></span>`
         } else {
             ele.parentNode.lastElementChild.innerHTML = "Unavailable";
@@ -140,9 +140,9 @@ data1.forEach((ele) => {
 })
 
 //--------- making checkbox by default checked---------
-window.addEventListener('DOMContentLoaded',()=>{
+window.addEventListener('DOMContentLoaded', () => {
     // console.log('hi')
-    data1.forEach(ele=>{
+    data1.forEach(ele => {
         ele.defaultChecked;
         // console.log(ele)
     })
@@ -150,14 +150,102 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 // ---- same delete funcalites in delete icon---------
 let detArr = document.querySelectorAll('.delIcon');
-detArr.forEach(ele=>{
-    ele.addEventListener('click',()=>{
+detArr.forEach(ele => {
+    ele.addEventListener('click', () => {
         // console.log(ele.parentElement)
-       let x= ele.parentElement.parentElement.firstElementChild;
-       x.checked = false
+        let x = ele.parentElement.parentElement.firstElementChild;
+        x.checked = false
 
-    //    console.log(x);
+        //    console.log(x);
         ele.parentElement.innerHTML = "Unavailable";
     })
 })
+
+
+// --------------- Add override button and open calendar section----- >
+document.getElementById('add-override').addEventListener('click', () => {
+    document.querySelector('.containerCal').style.display = "block";
+    document.querySelector('#bodyWithoutCal').style.opacity = "0.3";
+})
+
+//-------cancel button on calendar----------
+
+document.getElementById('cancel-btn').addEventListener('click', () => {
+    document.querySelector('.containerCal').style.display = "none";
+    document.querySelector('#bodyWithoutCal').style.opacity = "1";
+})
+
+
+//-------- Add event listner to td element in months of day ---------
+
+let total_days = document.querySelectorAll('tbody>tr:first-child ~ tr td');
+let arrDisplay = JSON.parse(localStorage.getItem('calData')) || [];
+total_days.forEach((ele) => {
+    ele.addEventListener('click', () => {
+        //=> append input time set blew calendar-----
+        let set_time = document.querySelector('.cal_set_time');
+        set_time.style.height = '6 rem'
+        set_time.innerHTML = `<h5>What hours are you available?</h5> <input type="text" name="" id="start" value="9:30 am">
+        <span> - </span>
+        <input type="text" name="" id="end" value="5:00 pm">
+        <span class="setIcon"><i class="fa-regular fa-trash-can"></i></span>`
+        // ----------------
+        let day = ele.innerText;
+        let month = document.querySelector('.dycalendar-span-month-year').innerText;
+        let start = document.getElementById('start').value
+        let end = document.getElementById('end').value;
+        let obj = {
+            time: `${start}-${end}`,
+            date: `${day} ${month}`
+        }
+        arrDisplay.push(obj);
+        localStorage.setItem('calData', JSON.stringify(arrDisplay));
+
+
+    })
+})
+
+// ---------- append saved data in DOM------
+let displayData = () => {
+    let element = document.querySelector('#dataFromCal');
+    element.innerHTML = null;
+    arrDisplay.forEach((ele, ind) => {
+        let div = document.createElement('div');
+        let p1 = document.createElement('p');
+        p1.innerText = ele.date;
+        let p2 = document.createElement('p');
+        p2.innerText = ele.time;
+        // p2.innerHTML += `<i class="fa-regular fa-trash-can" id ="dtl"></i>`
+        let span = document.createElement('span');
+        span.innerHTML += `<i class="fa-regular fa-trash-can" ></i>`;
+        span.addEventListener('click', () => {
+            deleteFunCal(ele, ind)
+        })
+        p2.append(span);
+        div.append(p1, p2);
+        element.append(div);
+    })
+}
+
+// ------------- Apply button on calendar---------
+
+document.getElementById('apply-btn').addEventListener('click', () => {
+    document.querySelector('.containerCal').style.display = "none";
+    document.querySelector('#bodyWithoutCal').style.opacity = "1";
+    displayData();
+})
+window.onload = displayData();
+
+
+//--------- Delete override list data after clicking on delete icon----
+function deleteFunCal(ele, ind) {
+    arrDisplay.splice(ind, 1);
+    localStorage.setItem('calData', JSON.stringify(arrDisplay))
+    displayData();
+}
+
+
+
+
+
 
