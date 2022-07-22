@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./one-on-onePage.css" />
+  </head>
+  <body>
+    <!-- heading section starts -->
+    <div id="heading">
+      <button>< Back</button>
+      <h2>Add One-on-One Event Type</h2>
+      <div>
+        <span> <b>Your event type is</b></span>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi_XfS9TDUE9iGEDsWbUGGrBc8ZsTbqDjJbQ&usqp=CAU"
+          alt=""
+        />
+      </div>
+    </div>
+    <hr style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px" />
+    <!-- heading section ends -->
+
+    <!-- this is language selection section -->
+    <div id="language">
+      <div>
+        <span>Invitee language -</span>
+
+        <div class="dropdown">
+          <span onclick="myFunction()" class="dropbtn">English</span>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">English</a>
+            <a href="#about">French</a>
+            <a href="#about">Spanish</a>
+            <a href="#about">German</a>
+            <a href="#about">Dutch</a>
+            <a href="#about">Portuguese</a>
+            <a href="#about">Italian</a>
+            <a href="#contact">Ukrainian</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://cdn-icons.flaticon.com/png/128/2871/premium/2871013.png?token=exp=1658516195~hmac=c9750673327137419a05f50e71736d51"
+          alt=""
+        />
+        <span>view live page</span>
+      </div>
+    </div>
+    <!-- language section ends -->
+    <!-- header part of the form -->
+    <div id="container">
+      <div id="boxheader">
+        <div>
+          <div id="selectcolor"></div>
+          <div>
+            <div>
+              <span> <b>What event is this?</b> </span>
+            </div>
+            <div><span>No location given</span></div>
+          </div>
+        </div>
+        <div>
+          <span>cancel</span>
+          <button>Next</button>
+        </div>
+      </div>
+      <hr />
+      <!-- form header end -->
+      <!-- start of the form -->
+      <form action="">
+        <span>Event name *</span>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/4610/4610333.png"
+          alt=""
+        /><br />
+        <input class="input" type="text" /><br />
+        <span>Location</span>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/4610/4610333.png"
+          alt=""
+        /><br />
+        <!--location dropdown menu  -->
+        <select name="select" id="Location">
+          <option value="Add a location">Add a location</option>
+          <option value="In-person meeting">In-person meeting</option>
+          <option value="Phone call">Phone call</option>
+          <option value="Google Meet">Google Meet</option>
+          <option value="Zoom">Zoom</option>
+
+          <option value="Microsoft Teams">Microsoft Teams</option>
+          <option value="GoToMeeting">GoToMeeting</option>
+          <option value="Custom">Custom</option>
+          <option value="Ask Invitee">Ask Invitee</option></select
+        ><br />
+        <!-- end of location drop down menu -->
+        <span>Description/Instructions *</span>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/4610/4610333.png"
+          alt=""
+        /><br />
+
+        <div id="icons">
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/82/82004.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons.flaticon.com/png/128/3594/premium/3594008.png?token=exp=1658471849~hmac=d2ffb7fd88832d0b1375827abd26f49b"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons.flaticon.com/png/128/3906/premium/3906756.png?token=exp=1658471996~hmac=79c969f6d114264077856578e7b59bfd"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/142/142351.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/154/154623.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons.flaticon.com/png/128/3018/premium/3018944.png?token=exp=1658472169~hmac=2149a0e09e383440b494b094f73393f3"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn3.iconfinder.com/data/icons/iconpark-vol-5/48/ordered-list-128.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://t3.ftcdn.net/jpg/01/09/40/34/240_F_109403453_AGyw0S3VS2WfDoPTKvPLv8BgQqp93ct4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <textarea
+          id="textarea"
+          rows="4"
+          cols="50"
+          placeholder="Write a summary and any details your invitee should know about the event."
+        ></textarea
+        ><br />
+        <span>Event link *</span>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/4610/4610333.png"
+          alt=""
+        /><br />
+        <span>calendly.com</span><br />
+        <input class="input" type="url" /><br />
+        <span>Event color *</span>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/4610/4610333.png"
+          alt=""
+        />
+      </form>
+      <div class="feedbackDiv">
+        <img
+          width="58px"
+          height="145px"
+          src="https://d6tizftlrpuof.cloudfront.net/themes/production/calendly-button-9e30fd77312fabb2823bda5a1bb5dd0a.png"
+          alt=""
+        />
+      </div>
+<!-- event color section -->
+      <div id="color">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <hr />
+      <div id="last">
+        <div>
+          <span>cancel</span>
+          <button>Next</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./one-on-onepage.js"></script>
