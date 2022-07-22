@@ -3,9 +3,9 @@ let header = () => {
     return ` <p>Choose a schedule below to edit or create a new one that you can apply to your event types</p>
     <h3>SCHEDULE</h3>
     <section id="section-1">
-        <div><a href=""> <span><i class="fa-solid fa-fax"></i></span> Working Hours</a></div>
-        <div><a href=""> <span><i class="fa-solid fa-clipboard-user"></i></span> 4 Hours</a></div>
-        <div><a href=""> + New schedule</a></div>
+        <div> <span><i class="fa-solid fa-fax"></i></span> Working Hours</div>
+        <div><span><i class="fa-solid fa-clipboard-user"></i></span> 4 Hours</div>
+        <div id ="addScheduleBtn"> + New schedule</div>
     </section>`
 }
 // -----common top section 

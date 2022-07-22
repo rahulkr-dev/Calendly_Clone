@@ -5,10 +5,10 @@
         }
         .arro::before,.arro::after{
             content: "";
-            width: 10px;
+            width: 6px;
             display: block;
             height: 1px;
-            background-color: black;
+            background-color: blue;
             position: absolute;
             top: 50%;
             right: 1rem;
@@ -20,7 +20,7 @@
         }
         .arro::before{
             transform: rotate(45deg);
-            right: 9px;
+            right: 12px;
         }
         .change::before{
             transform: rotate(-45deg);

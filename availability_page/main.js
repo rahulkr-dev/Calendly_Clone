@@ -104,9 +104,9 @@ let inputFieldSet = () => {
             <input type="checkbox" name="" class="time_checkbox" checked>
             <span class ="week_name">${inputArr[i]}</span>
             <div class="unavaiable">
-            <input type="text" name="" id="" value="9:30 am">
+            <input type="text" name="" id="" value="9:30am">
             <span> - </span>
-            <input type="text" name="" id="" value="5:00 pm">
+            <input type="text" name="" id="" value="5:00pm">
             <span class="setIcon delIcon"><i class="fa-regular fa-trash-can"></i></span>
             </div>
         </div>
@@ -271,18 +271,95 @@ function deleteFunCal(ele, ind) {
 // --------  event Type Dropdown -----------
 {
         let evetType = document.getElementById('eventTypeDropDown');
-        evetType.innerHTML+= ` <div class="search"></div>
+        evetType.innerHTML+= ` <div class="search"><input type ="text" placeholder ="Search"/></div>
         <div class="selecting">
             <p>Select all</p>
             <p> Deselect all</p>
         </div>
-        <div class="activeOn"></div>
-        <div class="profileName"></div>
+        <div class="activeOn"><p>Active on </p><div>append here</div></div>
+        <div class="profileName"><p>Rahul</p><div>append profile</div></div>
         <div class="search">
-            <button>Cancel</button>
-            <button>Save</button>
+            <button id ="Ecancel">Cancel</button>
+            <button id ="Esave">Save</button>
         </div>`
+
+        let dropdown = document.getElementById('eventTypeDropDown');
+        let eventBtn = document.getElementById('eventType');
+        let count =0;
+        eventBtn.addEventListener('click',()=>{
+            count++;
+            // console.log('hi first')
+            if(count%2==1){
+                dropdown.style.display = 'block';
+            }else{
+                dropdown.style.display = "none";
+            }
+        })
+        let cancel = document.getElementById('Ecancel')
+        let save = document.getElementById('Esave');
+
+        // ---------  disable and enable scroll -------
+
+        // function disableScroll() {
+        //     // Get the current page scroll position
+        //     scrollTop = 
+        //       window.pageYOffset || document.documentElement.scrollTop;
+        //     scrollLeft = 
+        //       window.pageXOffset || document.documentElement.scrollLeft,
+  
+        //         // if any scroll is attempted,
+        //         // set this to the previous value
+        //         window.onscroll = function() {
+        //             window.scrollTo(scrollLeft, scrollTop);
+        //         };
+        // }
+  
+        // function enableScroll() {
+        //     window.onscroll = function() {};
+        // }
+        
+
+
 }
+// --------- onclick funclaties on add schedule button
+{
+    let count =0;
+    let addS = document.getElementById('addScheduleBtn');
+    addS.addEventListener('click',()=>{
+        console.log('hi add working')
+        count++;
+        if(count%2==1){
+            document.querySelector('.newSecheduleDropDown').style.display ="block";
+            document.querySelector('#bodyWithoutCal').style.opacity ="0.2"
+            // disableScroll();
+        }else{
+            
+            document.querySelector('.newSecheduleDropDown').style.display ="none";
+            document.querySelector('#bodyWithoutCal').style.opacity ="1"
+
+        }
+    })
+
+    document.getElementById('Scancel').onclick = ()=>{
+        document.querySelector('.newSecheduleDropDown').style.display ="none";
+        document.querySelector('#bodyWithoutCal').style.opacity ="1"
+    }
+    document.getElementById('create').onclick = ()=>{
+        let val = document.getElementById('newSInput').value
+
+      if(true){
+        let element = document.getElementById('section-1');
+        element.innerHTML+=`<div><span><i class="fa-solid fa-clipboard-user"></i></span>${val}</div>
+        `;
+        document.querySelector('.newSecheduleDropDown').style.display ="none";
+        document.querySelector('#bodyWithoutCal').style.opacity ="1"
+      }else{
+        document.querySelector('.newSecheduleDropDown').style.display ="none";
+        document.querySelector('#bodyWithoutCal').style.opacity ="1"
+      }
+    }
+}
+
 
 
 
