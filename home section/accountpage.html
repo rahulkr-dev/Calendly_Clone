@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+   <div id="navbar23"></div>
+   
+   <div id="lbl1"><label>Account Settings</label></div>
+    <hr clear="both" />
+    <div class="dis_para">
+      <div class="acc_btn">
+        <button id="btn1" onclick="profile1()">Profile</button>
+        <button id="btn2" onclick="Brandling()">Branding</button>
+        <button id="btn3" onclick="link()">My Link</button>
+        <button id="btn4" onclick="Phoneno()">Phone Number</button>
+        <button id="btn5" onclick="Login()">Login</button>
+        <button id="btn6" onclick="cookies()">Cookies Setting</button>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div class="dis_form" id="Profile2" onclick="profile2()" >
+        <form id="form1">
+          <div class="pics">
+            <img src="./img/avatar-1577909_960_720.webp" id="img1" />
+            <div id="p_btn">
+              <button
+                style="
+                  width: 8vw;
+                  height: 6vh;
+                  border-radius: 8px;
+                  border: 1px solid skyblue;
+                  background-color: transparent;
+                  color: skyblue;
+                  cursor: pointer;
+                "
+                onclick="upload()"
+              >
+                Upload Picture
+              </button>
+              <label>JPG, GIF or PNG. Max size of 5MB.</label>
+            </div>
+          </div>
+          <div>
+            <label>Name</label><img src="./img/fi-cnsuxx-question-mark.png" id="mark1" /><br />
+            <input type="text" id="name1" /><br /><br />
+
+            <label>Welcome message.</label
+            ><img src="./img/fi-cnsuxx-question-mark.png" id="mark1" /><br />
+
+            <textarea
+              id="msg1"
+              placeholder="Welcome to my scheduling page. Please follow the instructions to add an event to my calendar."
+            ></textarea
+            ><br /><br />
+
+            <label>Language</label><br />
+            <select id="sel-lang">
+              <option>English</option>
+              <option>French</option>
+              <option>Spanish</option>
+              <option>German</option>
+              <option>Portuguese (Brazil)</option></select
+            ><br /><br />
+
+            <div class="time-div">
+              <div>
+                <label>Date Format</label
+                ><img src="./img/fi-cnsuxx-question-mark.png" id="mark1" /><br />
+                <select id="data-id">
+                  <option>MM/DD/YYYY</option>
+                  <option>DD/MM/YYYY</option>
+                </select>
+              </div>
+
+              <div style="margin-left: 2vw">
+                <label>Date Format</label
+                ><img src="./img/fi-cnsuxx-question-mark.png" id="mark1" /><br />
+                <select id="data-id">
+                  <option>12h(am/pm)</option>
+                  <option>24h</option>
+                </select>
+              </div>
+            </div>
+            <br /><br />
+
+            <label>Country</label><br />
+            <select id="country">
+              <option>India</option>
+              <option>Australia</option>
+              <option>UAE</option>
+              <option>Srilanka</option>
+              <option>Brazil</option></select
+            ><br /><br />
+
+            <label>Time Zone</label>
+            <br />
+            <select id="timezone">
+              <option>India Standard Time</option>
+              <option>Australia</option>
+              <option>UAE</option>
+              <option>Srilanka</option>
+              <option>Brazil</option></select
+            ><br /><br />
+
+            <div style="padding-bottom: 200px">
+              <button
+                id="foot-btn"
+                style="
+                  color: white;
+                  border: 1px solid skyblue;
+                  background-color: skyblue;
+                "onclick="saved()"
+              >
+                Save Changes
+              </button>
+              <button id="foot-btn" onclick="cancel()">Cancel</button>
+              <button id="foot-btn" style="margin-left: 25vw" onclick="deleteAcc()">
+                Delete Account
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--  -->
+      <!--  -->
+
+      <!-- Branding -->
+
+      <div class="dis_form" id="Branding" onclick="branding()" hidden>
+        <label>logo<img src="img/question.png" id="mark1" /></label>
+        <div style="border: 1px solid grey; height: 25vh; width: 30vw"></div>
+        <button
+          id="foot-btn"
+          style="
+            color: skyblue;
+            cursor: pointer;
+            margin-top: 10px;
+            border: 1px solid skyblue;
+          "
+          onclick="saved()"
+        >
+          Upload Image
+        </button>
+
+        <label style="margin-left: 4vw">JPG, GIF or PNG. Max size of 5MB.</label
+        ><br /><br /><br />
+        <label style="cursor: pointer"
+          >Calendly Branding<img src="img/question.png" id="mark1"
+        /></label>
+        <br /><br /><br />
+        <button
+          id="foot-btn"
+          style="
+            color: white;
+            border: 1px solid skyblue;
+            background-color: skyblue;
+          "
+          onclick="saved()"
+        >
+          Save Changes
+        </button>
+        <button id="foot-btn" onclick="cancel()">Cancel</button>
+      </div>
+      <!-- branding ends -->
+    </div>
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+      window.__be = window.__be || {};
+      window.__be.id = "604afaec012e2e000777fe25";
+      (function () {
+        var be = document.createElement("script");
+        be.type = "text/javascript";
+        be.async = true;
+        be.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "cdn.chatbot.com/widget/plugin.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(be, s);
+      })();
+    </script>
+    <!-- End of ChatBot code -->
+   
+    </body>
+    
+    </html>
+    <script src="./scripts/accountpage.js" type="module"></script>
