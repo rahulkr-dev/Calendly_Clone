@@ -1,5 +1,11 @@
+// ---- Import navbar from other ----------
+import navbar from "../navbar section/components/navbar.js";
+// console.log(navbar);
+document.getElementById('navbar').innerHTML = navbar()
+
+
 // ------- Import ------ hed and top section
-import { header, top } from "./components/help.js";
+import { header, top,arrroMove } from "./components/help.js";
 document.querySelector('.head').innerHTML += header();
 document.querySelector('.top').innerHTML += top();
 
@@ -243,6 +249,44 @@ function deleteFunCal(ele, ind) {
     localStorage.setItem('calData', JSON.stringify(arrDisplay))
     displayData();
 }
+
+// ---- adding up and doen arro on click ----
+{
+
+    let displayCountry = document.getElementById('displayCountry')
+    arrroMove(displayCountry);
+    displayCountry.addEventListener('click',()=>{
+        // console.log('hi')
+        document.querySelector('#displayCountry .arro').classList.toggle('change');
+    });
+    let topBtn = document.querySelector('.topBtn');
+    arrroMove(document.getElementById('eventT'));
+    topBtn.addEventListener('click',()=>{
+        // console.log('hi')
+        document.querySelector('#eventT .arro').classList.toggle('change');
+    });
+
+}
+
+// --------  event Type Dropdown -----------
+{
+        let evetType = document.getElementById('eventTypeDropDown');
+        evetType.innerHTML+= ` <div class="search"></div>
+        <div class="selecting">
+            <p>Select all</p>
+            <p> Deselect all</p>
+        </div>
+        <div class="activeOn"></div>
+        <div class="profileName"></div>
+        <div class="search">
+            <button>Cancel</button>
+            <button>Save</button>
+        </div>`
+}
+
+
+
+
 
 
 

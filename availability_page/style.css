@@ -48,20 +48,27 @@ a{
 
 main {
     background-color: var(--bg1);
+    box-shadow:inset 0 4px 20px rgba(37, 37, 37, 0.2);
+
     /* border: 1px solid black; */
     /* background-color: purple; */
     /* height: 200vh; */
 }
 .headingTag{
     font-weight: 300;
-    padding: 30px 0;
+    padding: 20px 0;
+    padding-bottom: 30px;
     font-size: 27px;
+    /* box-shadow: 0 5px 25px rgb(0 0 0 / 20%); */
+    /* z-index: 5; */
+    /* border: 1px solid black; */
+
     /* box-shadow: var(--boxShadow-main); */
 }
 .head>p:first-child{
     font-size: 15px;
     font-family: Poopins;
-    padding-top: 18px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 .head>h3{
@@ -383,4 +390,22 @@ margin-left: 10px;
     position: fixed;
     top: 37vh;
     right: 0;
+}
+
+/* ------ eventTypeDropDown ------ */
+#eventType{
+    position: relative;
+}
+#eventTypeDropDown{
+    position: absolute;
+    /* background-color: gray; */
+    border: 1px solid lightgray;
+    background-color: white;
+    top: 3.3rem;
+    left: 0;
+    height: 35rem;
+    width: 22rem;
+    overflow-y: scroll;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

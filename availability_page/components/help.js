@@ -1,6 +1,6 @@
 // ---common header
-let header = ()=>{
-    return `    <p>Choose a schedule below to edit or create a new one that you can apply to your event types</p>
+let header = () => {
+    return ` <p>Choose a schedule below to edit or create a new one that you can apply to your event types</p>
     <h3>SCHEDULE</h3>
     <section id="section-1">
         <div><a href=""> <span><i class="fa-solid fa-fax"></i></span> Working Hours</a></div>
@@ -9,7 +9,7 @@ let header = ()=>{
     </section>`
 }
 // -----common top section 
-let top = ()=>{
+let top = () => {
     return `  <div>
     <p>4hours</p>
     <div class="setIcon"><span><i class="fa-solid fa-gear"></i></span></div>
@@ -20,7 +20,7 @@ let top = ()=>{
 </div>
 <div>
     <div>
-        <button class="topBtn"> <span id="count_event">4</span> Event Type</button>
+        <button id ="eventType" class="topBtn"> <span id="count_event">4</span><span id ="eventT" > Event Type</span><div id="eventTypeDropDown"></div></button>
         <button class="topBtn" id="countries">
             <p id="displayCountry">rahul</p>
             <div id="addCountries">
@@ -36,4 +36,15 @@ let top = ()=>{
 </div>`
 }
 
-export {header,top}
+let arrroMove = (elem)=>{
+    elem.setAttribute('class','arro-box')
+    let span = document.createElement('span');
+    span.setAttribute('class','arro');
+    elem.append(span);
+    // console.log(elem)
+    // elem.addEventLinstner('click',()=>{
+    //     span.classList.toggle('change')
+    // })
+}
+
+export { header, top,arrroMove }
