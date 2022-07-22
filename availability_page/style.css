@@ -7,9 +7,21 @@ box-sizing: border-box;
 /* font-family: 'Poppins', sans-serif; */
 font-family: 'Roboto', sans-serif;
 font-weight: 200;
+transition: all 0.2s;
+}
+.fa-fax{
+    /* font-size: 18px; */
+    color: rgb(23, 23, 238);
+}
+.fa-clipboard-user{
+    color: rgb(29, 28, 28);
 }
 h4{
     font-size: 16px;
+}
+span{
+    display: inline-block;
+    margin-right: 10px;
 }
 
 
@@ -37,6 +49,8 @@ a{
 main {
     background-color: var(--bg1);
     /* border: 1px solid black; */
+    /* background-color: purple; */
+    /* height: 200vh; */
 }
 .headingTag{
     font-weight: 300;
@@ -258,13 +272,13 @@ main {
 }
 
 
-/* ---------------- list view container data---------- */
+/* ---------------- list view container data Input and checkboxs ---------- */
 .main_content{
     display: flex;
+    border:1px solid var(--bg1);
 }
 #list-data{
     width: 65%;
-    height: 300px;
     border-right: 2px solid var(--bg1);
     padding: 20px 20px;
     
@@ -272,6 +286,7 @@ main {
 .input_time{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 20px;
 }
 .input_time input[type="text"]{
@@ -280,8 +295,32 @@ main {
     border: none;
     border: 1px solid gray;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px 12px;
+}
+.input_time span{
+margin-right: 25px;
+margin-left: 10px;
+}
+
+.week_name{
+    width: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.plusIcon{
+    font-size: 25px;
+}
+.delIcon{
+    color: black;
+}
+.input_time_first{
+    display: flex;
+    align-items: center;
+}
+.unavaiable{
+    /* display: flex; */
+    color: gray;
 }
 
 
@@ -313,4 +352,35 @@ main {
 #override button:hover{
     /* background:rgba(rgb(4, 0, 255), rgb(28, 0, 128), blue, .5) */
     background-color: rgb(191, 237, 245);
+}
+
+
+#dataFromCal{
+    /* width: 100%; */
+    margin-top: 15px;
+}
+#dataFromCal p{
+    color: black;
+    
+}
+#dataFromCal p i{
+    padding-left: 15px;
+}
+#dataFromCal>div{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 20px 25px;
+    margin: 0 -25px;
+    font-size: 14px;
+}
+
+/* ----styling feeback img  */
+.feedbackDiv{
+    position: fixed;
+    top: 37vh;
+    right: 0;
 }

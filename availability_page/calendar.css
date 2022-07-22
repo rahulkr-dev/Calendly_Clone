@@ -1,0 +1,123 @@
+.containerCal{
+    width: 35%;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position:absolute;
+    margin: auto;
+    top: 25px;
+    left: 33vw;
+    z-index: 5;
+    background-color: white;
+    border-radius: 8px;
+    display: none;
+    transition: all 0.2s;
+}
+
+    
+.containerCal>h2{
+    text-align: center;
+    font-size: 23px;
+    padding: 10px 40px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+#dycalendar{
+    /* width: 28rem; */
+    margin: auto;
+}
+.dycalendar-month-container{
+    width: 100%;
+}
+.dycalendar-header{
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+}
+.dycalendar-body{
+    margin-top: 2.2rem;
+}
+.dycalendar-body tr{
+    width: 25rem;
+    /* background-color: green; */
+}
+.dycalendar-body tr td{
+    width: 3.5rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.dycalendar-body tr td:hover{
+    background-color: #f5f5f5;
+
+}
+
+.prev-btn,.next-btn{
+    /* background-color: green; */
+    /* padding: 15px; */
+    font-size: 2.4rem;
+    padding: 10px 15px;
+    color: gray;
+}
+tbody>tr:first-child td{
+    color: gray;
+    font-weight: normal;
+}
+td{
+    color: blue;
+    font-weight: bold;
+}
+
+/* --------------delete buttons */
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+.buttons button{
+    width: 40%;
+    padding: 12px 7px;
+    border: none;
+    border-radius: 18px;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: white;
+
+    
+}
+.buttons button:nth-child(2){
+    background-color: blue;
+    color: white;
+}
+
+/* -------calendar input time  */
+.cal_set_time{
+    border: 1px solid lightgray;
+    background-color: var(--bg1);
+    margin-bottom: 40px;
+    padding-left: 2rem;
+    /* height: 6rem; */      /*adding height by js-- */
+    /* display: flex; */
+    /* height: 6rem; */
+    align-items: center;
+}
+.cal_set_time input{
+    width: 5.4rem;
+    height: 2.5rem;
+    border: none;
+    border: 2px solid gray;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 5px 12px;
+    margin-bottom: 1rem;
+}
+.cal_set_time h5{
+    margin: 14px 0;
+    font-weight: 500;
+}
+.cal_set_time span{
+    margin-left: 15px;
+}
+
