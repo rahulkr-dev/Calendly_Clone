@@ -38,7 +38,7 @@ let navbar23=()=>{
           <li class="sub-item"><a href="#"><span class="material-symbols-outlined">
           lock
           </span>Organization Settings</a></li>
-          <li class="sub-item"><a href="#"><span class="material-symbols-outlined">
+          <li class="sub-item"><a href="#" id="share1"><span class="material-symbols-outlined">
           share
           </span>Share Your Link</a></li>
           <li class="sub-item"><a href="#"><span class="material-symbols-outlined">
