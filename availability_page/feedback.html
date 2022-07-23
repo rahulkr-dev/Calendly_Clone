@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <script src="https://kit.fontawesome.com/21698c5801.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./feedback.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="cut"><span><i class="fa-solid fa-xmark"></i></span></div>
+        <div class="logo"><img src="https://logos-world.net/wp-content/uploads/2021/06/Calendly-Logo-700x394.png"
+                alt="logo imgage"></div>
+        <div>
+            <p>How's your experience with Calendly?</p>
+        </div>
+        <div class="faces">
+            <span><i class="fa-solid fa-face-sad-cry">
+
+                </i>
+                <div class="talkbubble">Hate</div>
+            </span>
+            <span><i class="fa-solid fa-face-sad-tear">
+                </i>
+                <div class="talkbubble">Dislike</div>
+            </span>
+            <span><i class="fa-solid fa-face-meh">
+                </i>
+                <div class="talkbubble">Neutral</div>
+            </span>
+            <span><i class="fa-solid fa-face-grin">
+                </i>
+                <div class="talkbubble">Like</div>
+            </span>
+            <span><i class="fa-solid fa-face-grin">
+                </i>
+                <div class="talkbubble">Love</div>
+            </span>
+        </div>
+    </div>
+    <!-- <div class="talkbubble"></div> -->
+</body>
+
+</html>
+<script>
+    let ele = document.querySelectorAll('.faces span');
+    // console.log(ele)
+    // ele.forEach(el=>{
+    //     el.onmousenter = ()=>{
+    //         el.childElement.style.visibility = 'visible';
+    //     }
+    // })
+
+    ele.forEach(el=>{
+        el.addEventListener('mouseenter',()=>{
+            console.log('hi its working')
+            // el.firstElementChild.style.visibility = 'visible';
+            el.lastElementChild.style.visibility = 'visible';
+            console.log(el.lastElementChild)
+        })
+        el.addEventListener('mouseleave',()=>{
+            el.lastElementChild.style.visibility = 'hidden';
+
+        });
+        
+    })
+</script>
