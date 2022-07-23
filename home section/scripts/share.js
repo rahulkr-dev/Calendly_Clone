@@ -1,7 +1,7 @@
-let bttbnn = document.getElementById("mylink");
-bttbnn.addEventListener('click', ()=>{
-  logout();
-});
+// let bttbnn = document.getElementById("mylink");
+// bttbnn.addEventListener('click', ()=>{
+//   logout();
+// });
 
 setShareLinks();
 
