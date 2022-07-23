@@ -1,0 +1,31 @@
+
+        .arro-box{
+            position: relative;
+            padding-right: 1.3rem;
+        }
+        .arro::before,.arro::after{
+            content: "";
+            width: 6px;
+            display: block;
+            height: 1px;
+            background-color: blue;
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transition: all .3s ease-in-out;
+        }
+        .arro::after{
+            transform: rotate(-45deg);
+            /* right: 10px; */
+        }
+        .arro::before{
+            transform: rotate(45deg);
+            right: 12px;
+        }
+        .change::before{
+            transform: rotate(-45deg);
+        }
+        .change::after{
+            transform: rotate(+45deg);
+
+        }

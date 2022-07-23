@@ -48,20 +48,27 @@ a{
 
 main {
     background-color: var(--bg1);
+    box-shadow:inset 0 4px 20px rgba(37, 37, 37, 0.2);
+
     /* border: 1px solid black; */
     /* background-color: purple; */
     /* height: 200vh; */
 }
 .headingTag{
     font-weight: 300;
-    padding: 30px 0;
-    font-size: 27px;
+    padding: 20px 0;
+    padding-bottom: 30px;
+    font-size: 24px;
+    /* box-shadow: 0 5px 25px rgb(0 0 0 / 20%); */
+    /* z-index: 5; */
+    /* border: 1px solid black; */
+
     /* box-shadow: var(--boxShadow-main); */
 }
 .head>p:first-child{
     font-size: 15px;
     font-family: Poopins;
-    padding-top: 18px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 .head>h3{
@@ -81,6 +88,8 @@ main {
     background-color: var(--bg2);
     padding: 10px 15px;
     margin-right: 10px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 #section-1>div:nth-child(1) a{
     font-weight: bold;
@@ -108,6 +117,7 @@ main {
     background-color: var(--bg1);
     border-radius: 20px;
     border-color: black;
+    
 
 }
 #main{
@@ -383,4 +393,154 @@ margin-left: 10px;
     position: fixed;
     top: 37vh;
     right: 0;
+}
+
+/* ------ eventTypeDropDown ------ */
+#eventType{
+    position: relative;
+}
+#eventTypeDropDown{
+    position: absolute;
+    /* background-color: gray; */
+    border: 1px solid lightgray;
+    background-color: white;
+    top: 3.3rem;
+    left: 0;
+    height: 37rem;
+    width: 22rem;
+    overflow-y: scroll;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: none;
+    /* position: relative; */
+}
+#eventTypeDropDown >div{
+    display: flex;
+    color: black;
+    font-size: 14px;
+    border-bottom: 1px solid lightgrey;
+    padding: 15px 15px;
+}
+#eventTypeDropDown >div input{
+    width: 100%;
+    padding: 6px 14px;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 8px;
+    border: 1px solid blue;
+}
+#eventTypeDropDown >div:nth-child(1){
+    border-bottom: 1px solid lightgray;
+}
+#eventTypeDropDown >div:nth-child(2){
+    border-bottom: 1px solid lightgray;
+    justify-content: space-between;
+    color: blue;
+    padding: 6px 14px;
+    font-size: 13px;
+}
+#eventTypeDropDown >div:nth-child(3){
+    /* background-color: green; */
+    border: none;
+    display: grid;
+    justify-content:start;
+    /* background-color: green; */
+}
+#eventTypeDropDown >div:nth-child(4){
+    /* background-color: rgb(12, 29, 12); */
+    border-bottom: 1px solid lightgray;
+    display: grid;
+    justify-content:start;
+    
+}
+#eventTypeDropDown >div:nth-child(5){
+    justify-content: space-between;
+    /* position: absolute;
+    bottom: -15px; */
+    
+}
+#eventTypeDropDown >div:nth-child(5) button{
+    padding: 4px 2.6rem;
+    border-radius: 15px;
+    border: 1px solid gray;
+    color: black;
+    background-color: white;
+    
+}
+#eventTypeDropDown >div:nth-child(5) button:nth-child(2){
+    background-color: blue;
+    color: white;
+}
+
+/* ------ getting start div --------- */
+.gettingStart{
+   cursor: pointer;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 60px;
+    color: #fff;
+    background-color: #343f4e;
+    border: none;
+    border-radius: 8px;
+    padding: 0 20px;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+/* ------ new sechedule  */
+.newSecheduleDropDown{
+    width: 28%;
+    padding: 15px;
+    border-radius: 8px;
+    position: fixed;
+    top: 5rem;
+    left: 35rem;
+    background-color: white;
+    z-index: 5;
+    /* border: 1px solid gray; */
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+    display: none;
+
+}
+.newSecheduleDropDown h2{
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0 10px 0 ;
+}
+.newSecheduleDropDown p{
+    font-weight: bold;
+    font-size: 13px;
+    margin: 10px 0 8px 0  ;
+}
+.newSecheduleDropDown input{
+    width: 100%;
+    display: block;
+    padding: 6px;
+    border-radius: 8px;
+}
+.Fbtn{
+    margin: 13px 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Fbtn button{
+    border-radius: 18px;
+    padding:9px 2rem ;
+    border: 1px solid gray;
+}
+#Scancel{
+    background-color: white;
+}
+#create{
+    background-color: blue;
+    color: white;
+
+}
+#addScheduleBtn{
+    order: 10;
 }
