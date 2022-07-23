@@ -144,7 +144,18 @@ width: 39vh;;
     padding-top: 1vw;
     padding-bottom: 1vw;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 20px;
     background-color: transparent;
     border: 1px solid grey;
+  }
+  #foot-btn1{
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: red;
+    border: 1px solid grey; 
+    color: white;
   }
