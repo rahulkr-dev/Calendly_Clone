@@ -94,7 +94,7 @@
             <div id="finalSubmit">
                 <p>In the mean time, here are some links that might help you </p>
                 <span>Help Center</span>
-                <button>Submit</button>
+                <button id="submitBtn">Submit</button>
             </div>
         </div>
     </div>
@@ -124,4 +124,14 @@
         });
         
     })
+
+
+    document.getElementById('submitBtn').onclick = ()=>{
+        alert('Your Feedback is Recorderd');
+        document.querySelector('body').innerHTML = `<img src = "https://www.funimada.com/assets/images/cards/big/thank-you-10.gif" >`
+        setInterval(()=>{
+            location.href = "./working_hour.html"
+        },2000)
+
+    }
 </script>
