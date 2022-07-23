@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>One-on-one event page</title>
     <link rel="stylesheet" href="./one-on-onePage.css" />
+    <!-- <link rel="stylesheet" href="./navbar.css"> -->
   </head>
   <body>
     <!-- heading section starts -->
     <div id="heading">
-      <button>< Back</button>
+      <button> <a href="../createEventPage.html">< Back</a> </button>
       <h2>Add One-on-One Event Type</h2>
       <div>
         <span> <b>Your event type is</b></span>
@@ -65,7 +66,7 @@
         </div>
         <div>
           <span>cancel</span>
-          <button>Next</button>
+          <button onclick=" formData(event)" >Next</button>
         </div>
       </div>
       <hr />
@@ -77,7 +78,7 @@
           src="https://cdn-icons-png.flaticon.com/128/4610/4610333.png"
           alt=""
         /><br />
-        <input class="input" type="text" /><br />
+        <input id="eventname" type="text" /><br />
         <span>Location</span>
         <img
           src="https://cdn-icons-png.flaticon.com/128/4610/4610333.png"
@@ -161,13 +162,20 @@
           placeholder="Write a summary and any details your invitee should know about the event."
         ></textarea
         ><br />
+        <span>Duration</span><br>
+        <select  id="duration">
+          <option value="15 min">15 min</option>
+          <option value="15 min">30 min</option>
+          <option value="15 min">45 min</option>
+          <option value="15 min">60 min</option>
+        </select><br>
         <span>Event link *</span>
         <img
           src="https://cdn-icons-png.flaticon.com/128/4610/4610333.png"
           alt=""
         /><br />
         <span>calendly.com</span><br />
-        <input class="input" type="url" /><br />
+        <input id="link" type="url" /><br />
         <span>Event color *</span>
         <img
           src="https://cdn-icons-png.flaticon.com/128/4610/4610333.png"
@@ -184,25 +192,29 @@
       </div>
 <!-- event color section -->
       <div id="color">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="red"></div>
+        <div id="pink"></div>
+        <div id="magenta"> </div>
+        <div id="violet"></div>
+        <div id="blue"></div>
+        <div id="cyan"></div>
+        <div id="green"></div>
+        <div id="lime"></div>
+        <div id="yellow"></div>
+        <div id="orange"></div>
       </div>
       <hr />
       <div id="last">
         <div>
           <span>cancel</span>
-          <button>Next</button>
+          <button onclick=" formData(event)">Next</button>
         </div>
       </div>
     </div>
   </body>
 </html>
 <script src="./one-on-onepage.js"></script>
+<!-- <script type="module">
+  import navbar from "./component/navbar.js"
+  document.body.innerHTML=navbar()
+</script> -->
