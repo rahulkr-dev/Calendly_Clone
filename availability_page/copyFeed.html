@@ -8,9 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/21698c5801.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="./dycalendar.css">
-    <link rel="stylesheet" href="./calendar.css">
     <link rel="stylesheet" href="./utlity.css">
+    <style>
+        h1,div,button,h4,p,input,a,img{
+            border: 2px solid white; 
+            transition: all .3s ease-in-out;
+
+        }
+        h1:hover , div:hover , button:hover , h4:hover , p:hover , a:hover , img:hover,span:hover{
+            border: 2px solid purple !important; 
+            box-sizing: border-box;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -21,60 +33,14 @@
         <main>
             <div class="container">
                 <div class="head">
-                    <!-- <p>Choose a schedule below to edit or create a new one that you can apply to your event types</p>
-            <h3>SCHEDULE</h3>
-            <section id="section-1">
-                <div><a href=""> <span><i class="fa-solid fa-fax"></i></span> Working Hours</a></div>
-                <div><a href=""> <span><i class="fa-solid fa-clipboard-user"></i></span> 4 Hours</a></div>
-                <div><a href=""> + New schedule</a></div>
-            </section> -->
                 </div>
                 <div id="main">
                     <div class="top">
-                        <!-- <div>
-                        <p>4hours</p>
-                        <div class="setIcon"><span><i class="fa-solid fa-gear"></i></span></div>
-                    </div>
-                    <div>
-                        <p>ACTIVE ON</p>
-                        <P>TIME ZONE</P>
-                    </div>
-                    <div>
-                        <div>
-                            <button class="topBtn"> <span id="count_event">4</span> Event Type</button>
-                            <button class="topBtn" id="countries">
-                                <p id="displayCountry">rahul</p>
-                                <div id="addCountries">
-                                    <input type="text" name="" id="search" placeholder="Search...">
-                                    <h4>Time Zone</h4>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="topSecond">
-                            <div><span><i class="fa-solid fa-list"></i></span> List View</div>
-                            <div><span><i class="fa-solid fa-table-list"></i></span> Calendar View</div>
-                        </div>
-                    </div> -->
                     </div>
                     <section class="main_content">
                         <div id="list-data">
                             <h4>Set your weekly hours</h4>
                             <div class="addInputTimes">
-                                <!-- append here all input times -->
-                                <!-- <div class="input_time">
-                                <div class="input_time_first">
-                                    <input type="checkbox" name="" id="">
-                                    <span>SUN</span>
-                                    <input type="text" name="" id="">
-                                    <span> - </span>
-                                    <input type="text" name="" id="">
-                                    <span><i class="fa-regular fa-trash-can"></i></span>
-                                </div>
-                                <div class="input_time_second">
-                                    <span class="plusIcon">+r</span>
-                                    <span><i class="fa-regular fa-copy"></i></span>
-                                </div>
-                            </div> -->
                             </div>
                         </div>
                         <div id="override">
@@ -105,41 +71,34 @@
         </div>
     </div>
     <div class="feedbackDiv">
-        <img width="58px" height="145px" src="https://d6tizftlrpuof.cloudfront.net/themes/production/calendly-button-9e30fd77312fabb2823bda5a1bb5dd0a.png" alt="">
+        <img width="58px" height="145px"
+            src="https://d6tizftlrpuof.cloudfront.net/themes/production/calendly-button-9e30fd77312fabb2823bda5a1bb5dd0a.png"
+            alt="">
     </div>
-   <!-- some positio fied element  -->
-   <div class="gettingStart">Getting started</div>
-   <div class="dropupBox"></div>
-   <!-- new schedule pop up -->
-   <div class="newSecheduleDropDown">
-    <h2>New schedule</h2>
-    <p>Schedule name</p>
-    <input type="text" name="" id="newSInput" placeholder="Working Hours, Exclusive Hours, etc...">
-    <div class="Fbtn">
-        <button id="Scancel">Cancel</button>
-        <button id="create">Create</button>
+    <!-- some positio fied element  -->
+    <div class="gettingStart">Getting started</div>
+    <div class="dropupBox"></div>
+    <!-- new schedule pop up -->
+    <div class="newSecheduleDropDown">
+        <h2>New schedule</h2>
+        <p>Schedule name</p>
+        <input type="text" name="" id="newSInput" placeholder="Working Hours, Exclusive Hours, etc...">
+        <div class="Fbtn">
+            <button id="Scancel">Cancel</button>
+            <button id="create">Create</button>
+        </div>
     </div>
-   </div>
-    
+
 </body>
 
 </html>
 <script src="./main.js" type="module"></script>
-<script src="./dycalendar.js"></script>
 <script>
-    dycalendar.draw({
-        target: '#dycalendar',
-        type: 'month',
-        dayformat: 'full',
-        dayName: 'ddd',
-        monthformat: 'full',
-        highlighttargetdate: true,
-        prevnextbutton: 'show'
-    })
-</script>
-<script>
-  let divs = document.getElementsByTagName('*');
-  for(div of divs){
-    div.style.border = "3px solid purple";
-  }
+    let body = document.querySelector('body');
+    // console.log(body);
+    body.onclick = ()=>{
+        // console.log('hi')/
+        window.location.href = "./feedback.html"
+
+    }
 </script>

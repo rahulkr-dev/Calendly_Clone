@@ -9,6 +9,39 @@
     <link rel="stylesheet" href="./feedback.css">
 </head>
 <style>
+#feedBackContent{
+    font-size: 14px;
+}
+.selectBox{
+    margin: 8px 0 20px 0 ;
+}
+.selectBox select{
+    width: 100%;
+    padding: 8px 10px;
+}
+ .textarea{
+    width: 100%;
+    height: 8rem;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+#finalSubmit span{
+    display: block;
+    margin: 10px 0;
+    color: blue;
+    text-decoration: underline;
+}
+#finalSubmit button{
+    text-align: end;
+    display: block;
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    float: right;
+
+}
 
 </style>
 
@@ -42,6 +75,27 @@
                 </i>
                 <div class="talkbubble">Love</div>
             </span>
+        </div>
+        <div id="feedBackContent">
+            <p>Anything you want to tell us?</p>
+            <div class="selectBox">
+                <select name="" id="">
+                    <option value="">Choose a topic</option>
+                    <option value="">I have a suggestion</option>
+                    <option value="">I want to report an issue or bug</option>
+                    <option value="">I don't know to do</option>
+                    <option value="">I want to explain my rating</option>
+                </select>
+            </div>
+            <div id="textareaBox">
+                <p>Share your comments here</p>
+                <textarea name="" id="" class="textarea"></textarea>
+            </div>
+            <div id="finalSubmit">
+                <p>In the mean time, here are some links that might help you </p>
+                <span>Help Center</span>
+                <button>Submit</button>
+            </div>
         </div>
     </div>
     <!-- <div class="talkbubble"></div> -->
