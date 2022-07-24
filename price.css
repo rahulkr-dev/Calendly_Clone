@@ -1,0 +1,208 @@
+#offerbox{
+    width:90%;
+    margin:auto;
+    height:900px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:15px;
+}
+#offerbox>div{
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column-reverse;
+    
+    
+}
+#offerbox>div>div{
+    perspective: 400px;
+}
+.offer{
+    width:100%;
+    height:500px;
+    border-radius: 40px;
+    background-color:#eceff1;
+    text-align: center;
+}
+#offerbox>div:first-child>div{
+    height:500px;
+    background-color:#eceff1
+
+}
+#offerbox>div:nth-child(2)>div{
+    height:600px;
+    background-color:#eceff1
+
+}
+#offerbox>div:nth-child(3)>div{
+    height:700px;
+    background-color:#ede7f6;
+
+}
+#offerbox>div:nth-child(4)>div{
+    height:800px;
+    background-color:#e8f5e9;
+
+}
+#offerbox>div:nth-child(5)>div{
+    height:900px;
+    background-color:#000063;
+    color:white
+
+}
+p{
+    text-align: center;
+    color: rgb(71, 103, 136);
+    font-size: 40px;
+    line-height: 1.71429;
+    font-weight: 400;
+}
+h3{
+    font-size: 40px;
+    
+}
+h5{
+    font-size: 30px;
+}
+ .btn{
+    width:200px;
+    height:60px;
+    border-radius: 20px;
+    border:5px solid  rgb(71, 103, 136);
+}
+.btn:hover{
+    transform: translateZ(40px) ;
+    background-color: blue;
+    color:white;
+}
+#offerbox>div{
+    perspective: 100px;
+}
+#offerbox>div>div:hover{
+    transform: translateZ(6px);
+
+}
+#offerbox>div:nth-child(5)>div>button{
+    border:5px solid  white;
+    background-color: #000063;
+    color:white;
+}
+#offerbox>div:nth-child(5)>div>p{
+    color:white;
+}
+#offerTwo{
+    display:flex;
+    align-items: center;
+    width:80%;
+    margin:auto;
+    border: none;
+    margin-top: 30px;
+
+}
+#offerTWo>div{
+    width:250px;
+    height: 70%;
+    margin-left: 15px;
+    border:1px solid grey;
+    border-radius: 50px;
+    text-align: center;
+    padding:10px 10px;
+
+}
+#offerTwo>div:first-child{
+    width:35%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;    margin-left: 0;
+    border-radius: 0;
+
+}
+#offerTWo>div>button{
+    width:150px;
+    height: 50px;
+}
+#offerTwo>div:first-child>p{
+    font-size: 30px;
+}
+#offerTwo>div:first-child>h4{
+    font-size: 25px;
+    border:
+}
+#title{
+         width:70%;
+         margin:auto;
+        font-size: 130px;
+        line-height: 200px;
+        font-weight: 900;
+        white-space: pre-line;
+        text-align: center;
+        color: rgb(11, 53, 88);
+        margin-bottom: 32px;
+        font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    #name{
+        color:blue;
+        width:90%;
+        margin:auto;
+       font-size: 130px;
+       line-height: 200px;
+       font-weight: 900;
+       white-space: pre-line;
+       text-align: center;
+       margin-bottom: 32px;
+       font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+/* slideshow */
+.slider{
+    height:100px;
+    width:90%;
+    margin:auto;
+    overflow: hidden;
+    place-items: center;
+    position: relative;
+ }
+ .sliderTrack{
+     display:grid;
+     grid-template-columns: repeat(21,150px);
+     grid-gap:15px ;
+     width:calc(21*150);
+ 
+     animation:scroll 10s linear infinite;
+ }
+  @keyframes scroll {
+ 0%{
+     transform: translateX(0);
+ } 
+ 100%{
+     transform: translateX(-2000px);
+ }   
+ }  
+ .sliderTrack:hover{
+     animation-play-state: paused;
+ } 
+ .slide{
+     height:90%;
+     position: relative;
+     perspective: 100px;
+     padding:10px 10px;
+     place-items: center;
+     perspective: 100px;
+ }
+ .slide>img{
+     width:90%;
+     height:90%;
+     margin:auto;
+ transition: transform 1%;
+ 
+ }
+ .slide>img:hover{
+    transform: translateZ(40px);
+ }
+ /* .slider::before{
+     top:0;
+     left:0;
+ }
+ .slider::after{
+     top:0;
+     left:0;
+     transform:translateZ(20px);
+ }  */
+ 
+

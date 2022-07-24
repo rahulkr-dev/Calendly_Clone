@@ -1,0 +1,161 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /* font-family: cursive; */
+  }
+  #lbl1 {
+    margin-top: 80px;
+    font-size: 3vh;
+    margin-left: 14vw;
+    padding-bottom: 3vh;
+    padding-top: 10px;
+
+  }
+  hr {
+    /* margin-left: 2vw;
+    margin-right: 2vw; */
+    border: 0.1px thin grey;
+  }
+  .display1 {
+    display: none;
+  }
+  .dis_para {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+  }
+  .acc_btn {
+    margin-left: 13vw;
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    margin-top: 3vh;
+  }
+  #btn1,
+  #btn2,
+  #btn3,
+  #btn4,
+  #btn5,
+  #btn6 {
+    height: 6vh;
+    width: 20vh;
+    margin-top: 1vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  #btn4{
+width: 39vh;;
+  }
+ .acc_btn button:hover{
+    color: black;
+    font-weight: bold;
+ }
+  .dis_form {
+    width: 60vw;
+    margin-top: 4vh;
+    margin-left: 10vw;
+    padding-top: 2vh;
+    padding-left: 2vw;
+  }
+  #img1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 200px;
+    cursor: pointer;
+  }
+  .pics {
+    display: flex;
+    flex-direction: row;
+  }
+  #mark1 {
+    width: 20px;
+    padding-top: 2px;
+    padding-left: 8px;
+  }
+  #p_btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    margin-top: 2vh;
+  }
+  #name1 {
+    width: 29vw;
+    height: 6vh;
+    border-radius: 4px;
+    padding-left: 15px;
+    background-color: transparent;
+    border: 1px solid grey;
+    margin-top: 5px;
+  }
+  
+  textarea {
+    width: 29vw;
+    height: 20vh;
+    border-radius: 4px;
+    padding-left: 15px;
+    background-color: transparent;
+    border: 1px solid grey;
+    margin-top: 5px;
+    line-height: 22px;
+  }
+  #sel-lang {
+    width: 30vw;
+    background-color: transparent;
+    height: 6vh;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+  .time-div {
+    display: flex;
+    flex-direction: row;
+  }
+  #data-id {
+    width: 14vw;
+    background-color: transparent;
+    height: 6vh;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+  
+  #country {
+    width: 30vw;
+    background-color: transparent;
+    height: 6vh;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+  
+  #timezone {
+    width: 30vw;
+    background-color: transparent;
+    height: 6vh;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+  #foot-btn {
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid grey;
+  }
+  #foot-btn1{
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: red;
+    border: 1px solid grey; 
+    color: white;
+  }

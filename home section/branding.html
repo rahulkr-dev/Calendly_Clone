@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/branding.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div id="navbar23"></div>
+    <div id="lbl1"><label>Account Settings</label></div>
+    <hr clear="both" />
+    <div class="dis_para">
+      <div class="acc_btn">
+        <button id="btn1" onclick="profile1()"><a href="./accountpage.html">Profile</a></button>
+        <button id="btn2" onclick="Brandling()"><a href="./branding.html">Branding</a></button>
+        <button id="btn3" onclick="link()"><a href="./mylink.html">Link</a></button>
+        <button id="btn4" onclick="Phoneno()"><a href="./phoneno.html">Phone number</a></button>
+        <button id="btn5" onclick="Login()"><a href="./loginagain.html">Login</a></button>
+        <button id="btn6" onclick="cookies()">Cookies Setting</button>
+      </div>
+    <div class="dis_form" id="Branding" onclick="branding()" >
+        <label>Logo<img src="./img/fi-cnsuxx-question-mark.png" id="mark1" /></label>
+        <div style="border: 1px solid grey; height: 25vh; width: 30vw"></div>
+        <button
+          id="foot-btn"
+          style="
+            color: skyblue;
+            cursor: pointer;
+            margin-top: 10px;
+            border: 1px solid skyblue;
+          "
+          onclick="saved1()"
+        >
+          Upload Image
+        </button>
+
+        <label style="margin-left: 4vw">JPG, GIF or PNG. Max size of 5MB.</label
+        ><br /><br /><br />
+        <label style="cursor: pointer"
+          >Calendly Branding<img src="./img/fi-cnsuxx-question-mark.png" id="mark1"
+        /></label>
+        <br /><br /><br />
+        <button
+          id="foot-btn"
+          style="
+            color: white;
+            border: 1px solid skyblue;
+            background-color: #0069ff;
+          "
+          onclick="saved()"
+        >
+          Save Changes
+        </button>
+        <button id="foot-btn" onclick="cancel()">Cancel</button>
+      </div>
+</body>
+</html>
+<script src="./scripts/branding.js" type="module"></script>

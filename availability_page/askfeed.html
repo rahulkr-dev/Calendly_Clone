@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21698c5801.js" crossorigin="anonymous"></script>
+    <title>user</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+    }
+
+
+    .container {
+        width: 40%;
+        /* margin: auto; */
+        position: fixed;
+        top: 3rem;
+        left: 10rem;
+        border-radius: 9px;
+        padding: 25px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+
+    .logo {
+        margin-top: -25px;
+    }
+
+    .container img {
+
+        height: 120px;
+    }
+
+    .cut {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .box {
+        display: flex;
+    }
+
+    .first {
+        width: 175px;
+        height: 235px;
+        border: 1px solid gray;
+        padding: 25px;
+        /* display: grid; */
+        /* justify-content: center;
+         */
+         margin: auto;
+         transition: all 0.3s ease-in-out;
+         cursor: pointer;
+    }
+    .first:hover{
+        transform: translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.02) 2px 3px 5px 3px, rgba(27, 31, 35, 0.15) 2px 3px 5px 2px;
+
+    }
+    .first>div:last-child{
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .insideFirst{
+        display: flex;
+        justify-content: space-around;
+        background-color: #f5f5f5;
+        padding: 10px;
+        
+    }
+    .insideFirst>div:first-child{
+        width: 25px;
+        height: 25px;
+        background-color: lightgray;
+        border: 2px solid blue;
+        /* border-radius: ; */
+    }
+    .insideFirst p{
+        border-radius: 2px;
+          width: 60px;
+    height: 7px;
+    background-color: lightgray;
+    margin-bottom: 6px;
+}
+    
+
+
+
+    /* ----- Shape  */
+</style>
+
+<body>
+    <div class="container">
+        <div class="cut"><span><i class="fa-solid fa-xmark"></i></span></div>
+        <div class="logo"><img src="https://logos-world.net/wp-content/uploads/2021/06/Calendly-Logo-700x394.png"
+                alt="logo imgage"></div>
+
+        <div class="box">
+            <div class="first" id="bypage">
+                <div class="insideFirst" >
+                    <div></div>
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div>Give feedback on part of this page</div>
+            </div>
+            <div class="first" id="direct">
+                <div class="insideFirst" >
+                    <div></div>
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div>Give feedback on Calendly</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let by = document.getElementById('bypage');
+    // console.log(by)
+    document.getElementById('bypage').onclick = ()=>{
+        console.log('hi by pass page is working')
+        window.location.href = "./copyFeed.html"
+    }
+    document.getElementById('direct').onclick = ()=>{
+        window.location.href = "./feedback.html"
+    }
+</script>
