@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working hour - set your availability</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21698c5801.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="./utlity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        h1,div,button,h4,p,input,a,img{
+            border: 2px solid white; 
+            transition: all .3s ease-in-out;
+
+        }
+        h1:hover , div:hover , button:hover , h4:hover , p:hover , a:hover , img:hover,span:hover{
+            border: 2px solid purple !important; 
+            box-sizing: border-box;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="bodyWithoutCal">
+        <nav id="navbar"></nav>
+        <h1 class="headingTag">Set your availability</h1>
+        <main>
+            <div class="container">
+                <div class="head">
+                </div>
+                <div id="main">
+                    <div class="top">
+                    </div>
+                    <section class="main_content">
+                        <div id="list-data">
+                            <h4>Set your weekly hours</h4>
+                            <div class="addInputTimes">
+                            </div>
+                        </div>
+                        <div id="override">
+                            <h4>Add date overrides</h4>
+                            <p>Add dates when your availability changes from your weekly hours</p>
+                            <button id="add-override">Add a date override</button>
+                            <div id="dataFromCal">
+                                <!-- append here which is come from calendar -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="containerCal">
+        <h2>Select the date(s) you want to assign specific hours</h2>
+        <div id="dycalendar">
+
+        </div>
+        <div class="cal_set_time">
+            <!-- append input box here -->
+        </div>
+        <div class="buttons">
+            <button id="cancel-btn">Cancel</button>
+            <button id="apply-btn">Apply</button>
+        </div>
+    </div>
+    <div class="feedbackDiv">
+        <img width="58px" height="145px"
+            src="https://d6tizftlrpuof.cloudfront.net/themes/production/calendly-button-9e30fd77312fabb2823bda5a1bb5dd0a.png"
+            alt="">
+    </div>
+    <!-- some positio fied element  -->
+    <div class="gettingStart">Getting started</div>
+    <div class="dropupBox"></div>
+    <!-- new schedule pop up -->
+    <div class="newSecheduleDropDown">
+        <h2>New schedule</h2>
+        <p>Schedule name</p>
+        <input type="text" name="" id="newSInput" placeholder="Working Hours, Exclusive Hours, etc...">
+        <div class="Fbtn">
+            <button id="Scancel">Cancel</button>
+            <button id="create">Create</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./main.js" type="module"></script>
+<script>
+    let body = document.querySelector('body');
+    // console.log(body);
+    body.onclick = ()=>{
+        // console.log('hi')/
+        window.location.href = "./feedback.html"
+
+    }
+</script>
