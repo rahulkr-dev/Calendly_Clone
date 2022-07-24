@@ -526,7 +526,9 @@ color:
 .ccard{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px 13px;
-    height: 190px;
+     fw17_0957_day-5
+    
+
 }
 .ccard1{
     width: 100%;
@@ -540,6 +542,9 @@ color:
     font-size: 1.3rem;
     line-height: 1.4;
     font-weight: 700;
+ fw17_0957_day-5
+    margin-top: 16px;
+
     margin-bottom: 16px;
 }
 .ccard p {
@@ -555,7 +560,9 @@ color:
 
 #addmni{
     width: 100%;
-    height: fit-content;
+ fw17_0957_day-5
+    /* height:  ; */
+
     background-color: rgb(248, 248, 248);
 
 }
@@ -622,12 +629,244 @@ color:
     font-size: 14px;
 }
  
+ fw17_0957_day-5
+/* --------------------------6card sec---------------------*/
+ 
+
+#csecp{
+    margin-top: 16px;
+}
+
+.ccard6{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 13px;
+    height: 263px;
+}
+
+.ccardp1{
+    width: 100%;
+    line-height: 1.71429;
+    height: auto;
+    padding-bottom: 32px;
+}
+.ccard1 img{
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: 30px;
+}
+.ccard6 a{
+    margin-top: auto;
+    color: rgb(0, 107, 255);
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: left;
+    padding-bottom: 24px;
+    padding-right: 24px;
+    padding-left: 0px;
+    background-color: transparent;
+    border-radius: 0px 0px 8px 8px;
+    font-size: small;
+}
+
+.ccard6 a:hover {
+    color: black;
+}
+
+/* ----------------------do more sec-------------------- */
+.dms{
+    margin-top: 450px;
+    width: 100%;
+    height: 247px;
+    /* background-color: aqua; */
+}
+.dosec{
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    
+}
+#do-h2{
+    text-align: center;
+    font-size: 3.125rem;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(29, 52, 75);
+    margin-bottom: 32px;
+    max-width: 770px;
+}
+.do-p2{
+    text-align: center;
+    color: rgb(66, 84, 102);
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 24px;
+    max-width: 770px;
+
+    width: 100%;
+    line-height: 1.71429;
+    height: auto;
+    padding-bottom: 32px;
+}
+ 
+
+ /* -----------------------------------div-img------------ */
+ .divimg{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid springgreen; */
+    margin-bottom: 100px;
+ }
+ .divimgsec{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+ }
+ .dvleft{
+    width: 50%;
+    /* background-color: rgb(139, 241, 23); */
+    padding: 20px;
+
+ }
+ .dvright{
+    width: 50%;
+    /* background-color: aqua; */
+    padding: 20px;
+    
+ }
+ .do-p23{
+    text-align: left;
+    color: rgb(66, 84, 102);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    font-weight: 500;
+ }
+ .dvimgh6{
+    font-weight: 600;
+    text-align: left;
+    color: rgb(0, 107, 255);
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+ }
+
+.dvimgh2{
+    font-size: 1.75rem;
+    line-height: 1.4;
+    text-align: left;
+    color: rgb(29, 52, 75);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+#btmpart{
+    border: 1px solid blue;
+    width: 100%;
+    height: 400px;
+    background-color: aquamarine;
+
+}
+
+/* ----------------------footer------------------------ */
+
+#footer{
+    width:80%;
+    height:950px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+#footer>div:first-child{
+    width:40%;
+    height:100%;
+    padding:15px 15px;
+
+}
+#footer>div:last-child{
+    width:60%;
+    height:100%;
+}
+.row{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:15px ;
+    height: 215px;
+
+    margin-top: 13px;
+}
+ 
+.content>h1{
+    font-size:1.5rem;
+    color: rgb(11, 53, 88);
+    
+}
+.content p{
+    color: rgb(11, 53, 88);
+    font-size: 0.8rem;
+    line-height: 1.7;
+    
+}
+#footer>div:last-child>div:last-child{
+    height:300px;
+}
+.fjIWKs {
+    margin-top: 23px;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 24px;
+    max-width: 160px;
+}
+#easy{
+    color: rgb(11, 53, 88);
+    margin: 15px 0;
+
+}
+#ahead{
+    color:blue;
+    margin-bottom: 15px;
+
+}
+#language{
+    width:400px;
+    height:60px;
+    margin-bottom: 26px;
+    border-radius: 8px;
+    border:none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#footp{
+    text-align: left;
+    color: rgb(11, 53, 88);
+    font-size: 1.025rem;
+    line-height: 1.51429;
+    font-weight: 400;
+    margin-bottom: 38px;
+}
+#twitter{
+    width: 138px;
+}
 
 
 
 
 
 
+ fw17_0957_day-5
+/* -----------------------------------Media quaries-------------------- */
 
 
 
@@ -672,7 +911,9 @@ color:
         overflow-x: hidden;
         display: block;
         transition: 0.3s;
-        background: transparent;
+ fw17_0957_day-5
+        /* background: transparent; */
+
 
     }
     .toggle_menu,
@@ -740,7 +981,9 @@ color:
         overflow-x: hidden;
         display: block;
         transition: 0.3s;
-        background: transparent;
+ fw17_0957_day-5
+        /* background: transparent; */
+
 
     }
 .toggle_menu,

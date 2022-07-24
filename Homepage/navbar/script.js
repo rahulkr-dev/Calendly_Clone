@@ -1,3 +1,15 @@
+ fw17_0957_day-5
+import nav from "../compo/homenav.js"
+
+let navbar = document.getElementById("homenav");
+navbar.innerHTML = nav();
+
+
+
+
+
+
+
 const navmenu = document.getElementById("nav-menu");
 const togglemenu = document.getElementById("toggle-menu");
 const closemenu = document.getElementById("close-menu");
