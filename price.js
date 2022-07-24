@@ -1,5 +1,8 @@
 
-    let logperson=JSON.parse(localStorage.getItem("logperson"))||[];
+   import navbar from "./final homepage/Homepage/compo/homenav.js"
+
+   document.getElementById('navbar').innerHTML = navbar();
+   let logperson=JSON.parse(localStorage.getItem("logperson"))||[];
 
 window.checkoffer=function()
 {

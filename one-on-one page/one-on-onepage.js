@@ -57,5 +57,6 @@ let userArr=JSON.parse(localStorage.getItem("formdata"))||[];
        userArr.push(userdata)
        
        localStorage.setItem("formdata",JSON.stringify(userArr))
+       location.href = "../home section/indexAnkur.html"
 
     }

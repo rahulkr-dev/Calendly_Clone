@@ -45,7 +45,7 @@
                             <div class="wrapper">
                                 <div class="container1">
                                   <input type="text" class="input1" placeholder="Enter your email">
-                                  <input type="button" value="Sign up" class="close-btn">
+                                  <input type="button" value="Sign up" id ="close_btn" class="close-btn">
                                 </div>
                                 </div>
                             <span>
@@ -639,3 +639,8 @@
   </body>
 </html>
 <script src="./script.js" type="module"></script>
+<script>
+    document.getElementById('close_btn').onclick = ()=>{
+        location.href = "../../../../Signup.html"
+    }
+</script>

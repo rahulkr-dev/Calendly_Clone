@@ -4,8 +4,8 @@ let navbar23=()=>{
   <div class="navigation">
     <ul class="menu">
      
-      <li class="menu-item"><a href="#">Home</a></li>
-      <li class="menu-item"><a href="#">Availability</a></li>
+      <li class="menu-item"><a href="./indexAnkur.html">Home</a></li>
+      <li class="menu-item"><a href="../../../../availability_page/working_hour.html">Availability</a></li>
       <li class="menu-item"><a href="#">Integrations</a></li>
       <li class="menu-item">
         <a class="sub-btn" href="#">Help <i class="fas fa-angle-down"></i></a>
@@ -23,7 +23,7 @@ let navbar23=()=>{
         hdr_auto
         </span>Account <i class="fas fa-angle-down"></i></a>
         <ul class="sub-menu">
-          <li class="sub-item"><a href="#"><span class="material-symbols-outlined">
+          <li class="sub-item"><a href="./accountpage.html"><span class="material-symbols-outlined">
           person
           </span>Account Setting</a></li>
           <li class="sub-item"><a href="#"><span class="material-symbols-outlined">

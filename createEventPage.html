@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./createEventPage.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- this is heading part and for back button -->
     <div id="head">
-        <button>< Back</button>
+        <button> Back</button>
         <span>Create New Event Type</span>
     </div>
     <!-- this section contains entire page after heading part -->
@@ -28,7 +29,7 @@
                         <p>Let an invitee pick a time to meet with you.</p>
                     </div>
                 </div>
-                <button>Create</button>
+                <button onclick="run()">Create</button>
             </div>
             <!-- group -->
             <div id="creategroup1">
@@ -84,3 +85,9 @@
     </div>
 </body>
 </html>
+<script>
+    function run(){
+        // console.log("its working")
+        window.location.href = "./one-on-one page/one-on-onPage.html"
+    }
+</script>

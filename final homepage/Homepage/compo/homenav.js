@@ -148,7 +148,7 @@ let nav = ()=>{
                  </div>
         </div>
       </li>
-      <li class="nav_item"><a href="#" class="nav_link">Pricing </a></li>
+      <li class="nav_item"><a href="../../../../price.html" class="nav_link">Pricing </a></li>
       <li class="nav_item dropdown">
         <a href="#" class="nav_link dropdown_link"
           >Resources<i class="fa-solid fa-angle-down fa-xs dropdown_icon"></i
@@ -282,7 +282,7 @@ let nav = ()=>{
     </ul>
     <ul class="top-right-nav" id="right-nav">
         <li id="logbb">
-           <a href="#" id="linav">Log In</a>
+           <a href="../../../../login.html" id="linav">Log In</a>
         </li>
         <li id="uicon">
             <i class="fa-regular fa-user"></i>

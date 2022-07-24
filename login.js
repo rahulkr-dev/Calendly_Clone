@@ -1,8 +1,10 @@
 let users=JSON.parse(localStorage.getItem("users"))||[];
 
-
+document.getElementById('submit1').addEventListener('click',checkData);
 function checkData()
-{  let email=document.getElementById("email").value;
+{ 
+    // ev.preventDefault();
+     let email=document.getElementById("email").value;
 let password=document.getElementById("password").value;
     
     let filter=users.filter((ele)=>{
@@ -13,7 +15,9 @@ console.log(filter[0]);
 if(filter.length>0)
 {
     localStorage.setItem("logperson",JSON.stringify(filter));
-    alert(`${filter[0].name},your log in  is sucessfull`)
+    alert(`${filter[0].name},your log in  is sucessfull`);
+    console.log('this is working')
+    location.href = "./home section/indexAnkur.html"
 }else{
     alert("Wrong password or email");
 }
