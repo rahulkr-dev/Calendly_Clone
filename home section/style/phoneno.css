@@ -1,0 +1,78 @@
+#no2{
+position: fixed;
+  top:30%;
+  left: 30%;
+  /* border: 1px solid black; */
+  width: 450px;
+}
+#btn10{
+  border-radius: 15px;
+  margin-left: 20px;
+  border: none;
+  padding: 10px 10px;
+  color: grey;
+}
+#btn10:hover{
+  cursor: pointer;
+
+
+}
+input{
+  padding-left: 10px;
+  margin-left: 10px;
+}
+*{
+  margin: 0%;
+  padding: 0%;
+  /* font-family: cursive; */
+}
+#lbl1 {
+  margin-top: 80px;
+  font-size: 3vh;
+  margin-left: 14vw;
+  padding-bottom: 3vh;
+  padding-top: 10px;
+
+}
+hr {
+  /* margin-left: 2vw;
+  margin-right: 2vw; */
+  border: 0.1px thin grey;
+}
+.display1 {
+  display: none;
+}
+.dis_para {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
+.acc_btn {
+  margin-left: 13vw;
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  margin-top: 3vh;
+}
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6 {
+  height: 6vh;
+  width: 20vh;
+  margin-top: 1vh;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+#btn4{
+width: 39vh;;
+}
+.acc_btn button:hover{
+  color: black;
+  font-weight: bold;
+}
+

@@ -35,29 +35,13 @@ function logout() {
     window.location.href = "./index.html";
   }
 
-
+  let remo = document.getElementById("foot-btn1");
+  remo.addEventListener('click', ()=>{
+    deleteAcc();
+  });
   
   function deleteAcc() {
     localStorage.clear();
     alert("You successfull deleted your account");
   }
-  var profile = document.getElementById("Profile");
-    var branding = document.getElementById("Branding");
   
-  function profile1() {
-    document.getElementById("Profile").hidden = false;
-    document.getElementById("Branding").hidden = true;
-    // console.log(branding);
-    // branding.hidden = true;
-    // profile.style.display = 'block';
-    // Branding.style.display = 'none';
-  }
-  
-  function Brandling() {
-    document.getElementById("Profile").hidden = true;
-    document.getElementById("Branding").hidden = false;
-    
-    // console.log(branding);
-    // profile.style.display = 'none';
-    // Branding.style.display = 'block';
-  }
